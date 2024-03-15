@@ -323,6 +323,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1496866980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7850907693418403440, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
+  m_PrefabInstance: {fileID: 6833303102110555663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1496866981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496866980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8c760895290fa428ca697a8d12f182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpHeight: 1.5
+--- !u!114 &1496866982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496866980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fc04b4494fd1748b2eee6ef791d539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1496866987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496866980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9888dba4fb4b8d94b80082327e37f8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cam: {fileID: 1968204815}
+  xSensitivity: 30
+  ySensitivity: 30
+--- !u!20 &1968204815 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3032299896549662704, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
+  m_PrefabInstance: {fileID: 6833303102110555663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6833303102110555663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,7 +429,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7850907693418403440, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1496866982}
+    - targetCorrespondingSourceObject: {fileID: 7850907693418403440, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1496866981}
+    - targetCorrespondingSourceObject: {fileID: 7850907693418403440, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1496866987}
   m_SourcePrefab: {fileID: 100100000, guid: c4d42a65048b0644aba3869a8b8d7969, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
