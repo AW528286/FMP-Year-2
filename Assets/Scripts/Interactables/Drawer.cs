@@ -6,6 +6,7 @@ public class Drawer : Interactable
 {
     [SerializeField]
     private GameObject drawer;
+    private bool drawertestopen;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class Drawer : Interactable
     }
     protected override void Interact()
     {
-        Debug.Log("I Love Men");
+        drawertestopen = !drawertestopen;
+        drawer.GetComponent<Animator>().SetBool("IsOpen", drawertestopen);
     }
 }
