@@ -7,8 +7,10 @@ public class LoseScreen : MonoBehaviour
 {
     public void OnAwake()
     {
-        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        
+
     }
 
     public void MainMenu()

@@ -11,6 +11,8 @@ public class LoadLoseScreen : MonoBehaviour
         {
             SceneManager.LoadScene(LoseScreen);
             Debug.Log("Works");
+
+            
         }
     }
 }
