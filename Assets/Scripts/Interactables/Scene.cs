@@ -16,10 +16,10 @@ public class Scene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Debug log to confirm player tag is detected
-            Debug.Log("Player detected, loading scene: " +EscapeOutside);
+            Debug.Log("Player detected, loading scene: " + EscapeOutside);
 
             // Load the specified scene
-            SceneManager.LoadScene(EscapeOutside);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
 }
